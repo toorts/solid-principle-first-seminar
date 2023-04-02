@@ -1,19 +1,19 @@
 package homework.service;
 
 import homework.model.User;
-import homework.model.UserPersister;
+import homework.model.Saver;
 
 public class UserService {
     private final User user;
-    private final UserPersister persister;
+    private final Saver saver;
 
     public UserService(User user) {
         this.user = user;
-        this.persister = new UserPersister();
+        this.saver = new Saver();
     }
 
     public void save() {
-        persister.save(user);
+        saver.save(user);
     }
 
     public void report() {
