@@ -1,6 +1,6 @@
 package lsp2.model;
 
-public class Order {
+public class Order implements Orderable {
     private final int price;
     private final int quantity;
 
